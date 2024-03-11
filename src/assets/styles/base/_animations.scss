@@ -1,0 +1,49 @@
+@keyframes marqueeHero {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes openButton {
+  from {
+    transform: rotate(-90deg);
+  }
+  to {
+    background-color: #fb4b4d;
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes closeButton {
+  from {
+    background-color: #fb4b4d;
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(-90deg);
+  }
+}
+
+@keyframes openMobileMenu {
+    from {
+        transform: translateY(-115%);
+        opacity: 0;
+    } to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes closeMobileMenu {
+    from {
+        transform: translateY(0%);
+        opacity: 1;
+    } to {
+        transform: translateY(-115%);
+        opacity: 0;
+    }
+}
+
