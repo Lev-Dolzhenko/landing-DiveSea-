@@ -1,7 +1,17 @@
+.swiper__wrapper {
+  position: relative;
+}
+
+.hero__swiper {
+  overflow: hidden;
+}
+
 .hero__slider {
   width: 640px;
   overflow: hidden;
   position: relative;
+
+  height: 550px;
 }
 .hero__slides {
   display: flex;
@@ -20,4 +30,23 @@
   object-fit: cover;
 
   border-radius: 25px;
+}
+
+.slides__buttons_hero {
+  position: relative;
+}
+
+.hero__vector {
+  position: absolute;
+  right: 44%;
+  top: 58%;
+  width: 100px;
+  height: 100px;
+}
+
+.hero__dodes {
+  position: absolute;
+  right: 1%;
+  top: -20%;
+  z-index: -1;
 }
