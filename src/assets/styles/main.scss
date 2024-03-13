@@ -2,6 +2,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700);
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800);
 @import "./base/animations";
 @import "./base/mixins";
 @import "./base/reset";
@@ -13,4 +14,11 @@
 @import "./blocks/header";
 @import "./blocks/hero";
 @import './blocks/heroSwiper';
+@import './blocks/top';
+@import './blocks/viewedBlock';
+
+
+@import './blocks/marketplace';
+
+
 

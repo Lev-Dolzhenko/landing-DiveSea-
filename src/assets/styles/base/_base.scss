@@ -52,6 +52,33 @@ a {
 }
 
 .title2 {
+  color: rgb(197, 197, 197);
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 26.92px;
+  letter-spacing: 0px;
+  text-align: left;
+
+  &_top {
+    text-align: center;
+  }
+
+  &_accent {
+    color: rgb(20, 20, 22);
+  }
+
+  &_marketplace {
+    text-align: center;
+  }
+}
+
+.title3 {
+  color: rgb(20, 20, 22);
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0px;
+  text-align: left;
 }
 
 .subtitle {

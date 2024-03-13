@@ -1,2 +1,3 @@
 import '../styles/main.scss'
-import '../js/swiper.js'
+import './swiperHero.js'
+import './swiperTop.js'

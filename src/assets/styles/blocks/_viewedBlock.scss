@@ -1,0 +1,144 @@
+.viewed {
+  max-width: 365px;
+
+  box-sizing: border-box;
+  border: 1px solid rgb(237, 242, 247);
+  border-radius: 16px;
+
+  box-shadow: 10px 10px 50px 0px rgba(20, 20, 22, 0.1);
+  background: rgb(255, 255, 255);
+
+  padding: 26px 24px;
+
+  width: 100%;
+
+  right: 99px;
+  bottom: -120px;
+
+  position: absolute;
+}
+.viewed_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 28px;
+}
+.viewed_bottom {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.viewed__item {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  column-gap: 20px;
+}
+
+.viewed_image {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 46px;
+  height: 46px;
+
+  border-radius: 50%;
+
+  box-sizing: border-box;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 59%;
+
+  background: rgb(255, 255, 255);
+
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+}
+
+.viewed_image_number {
+  position: absolute;
+  right: -5px;
+  bottom: -5px;
+
+  width: 21px;
+  height: 21px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+
+  color: rgb(20, 20, 22);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+  text-align: center;
+}
+
+.viewed_text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.viewed_text_top {
+  color: rgb(20, 20, 22);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.viewed_val_top {
+  color: rgb(20, 20, 22);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.viewed_text_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.viewed_text_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.viewed_name_bottom {
+  color: rgb(100, 116, 139);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.viewed_val_bottom {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.viewed_val_bottom-green {
+  color: rgb(16, 196, 82);
+}
+
+.viewed_val_bottom-red {
+  color: rgb(226, 51, 51);
+}

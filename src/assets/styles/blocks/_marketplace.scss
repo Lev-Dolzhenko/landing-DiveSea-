@@ -1,0 +1,47 @@
+.marketplace {
+  padding: 100px 0;
+}
+.container {
+}
+.marketplace__title {
+  margin-bottom: 65px;
+}
+.title2 {
+}
+.title2_marketplace {
+}
+.title2_accent {
+}
+.marketplace__tags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 22px;
+
+  margin-bottom: 100px;
+}
+.marketplace__tag {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  box-sizing: border-box;
+  border: 2px solid rgb(20, 20, 22);
+  border-radius: 13px;
+
+  padding: 17px;
+
+  color: rgb(26, 32, 44);
+  font-family: $manrope;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+  text-align: left;
+}
+
+.marketplace__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 60px;
+}
