@@ -1,49 +1,51 @@
-@keyframes marqueeHero {
+@keyframes questionButtonOpen {
   from {
-    transform: translateX(0%);
+    opacity: 0;
+    top: -30%;
   }
   to {
-    transform: translateX(-50%);
+    opacity: 1;
+    top: 50%;
   }
 }
 
-@keyframes openButton {
+@keyframes questionButtonClose {
   from {
-    transform: rotate(-90deg);
+    opacity: 1;
+    top: 50%;
   }
   to {
-    background-color: #fb4b4d;
-    transform: rotate(90deg);
+    opacity: 0;
+    top: -30%;
   }
 }
 
-@keyframes closeButton {
+@keyframes questionAnswerOpen {
   from {
-    background-color: #fb4b4d;
-    transform: rotate(90deg);
+    opacity: 0;
+    height: 30px;
+    margin-top: -30px;
+    visibility: hidden;
   }
   to {
-    transform: rotate(-90deg);
+    opacity: 1;
+    height: auto;
+    margin-top: 0;
+    visibility: visible;
   }
 }
 
-@keyframes openMobileMenu {
-    from {
-        transform: translateY(-115%);
-        opacity: 0;
-    } to {
-        transform: translateY(0%);
-        opacity: 1;
-    }
+@keyframes questionAnswerClose {
+  from {
+    opacity: 1;
+    height: auto;
+    margin-top: 0;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    height: 30px;
+    margin-top: -30px;
+    visibility: hidden;
+  }
 }
-
-@keyframes closeMobileMenu {
-    from {
-        transform: translateY(0%);
-        opacity: 1;
-    } to {
-        transform: translateY(-115%);
-        opacity: 0;
-    }
-}
-

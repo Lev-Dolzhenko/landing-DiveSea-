@@ -55,7 +55,7 @@ a {
   color: rgb(197, 197, 197);
   font-size: 45px;
   font-weight: 600;
-  line-height: 26.92px;
+  line-height: 26px;
   letter-spacing: 0px;
   text-align: left;
 
@@ -70,6 +70,15 @@ a {
   &_marketplace {
     text-align: center;
   }
+
+  &_questions {
+    text-align: center;
+    line-height: 140%;
+
+    span {
+      color: rgb(197, 197, 197);
+    }
+  }
 }
 
 .title3 {
@@ -79,6 +88,15 @@ a {
   line-height: 140%;
   letter-spacing: 0px;
   text-align: left;
+
+  &_question {
+    color: rgb(50, 49, 66);
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 64px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
 }
 
 .subtitle {
