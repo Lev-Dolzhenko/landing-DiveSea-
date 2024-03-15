@@ -1,0 +1,174 @@
+.community {
+  height: 1400px;
+
+  position: relative;
+}
+
+.container_community {
+  height: 100%;
+}
+
+.community__subtitle {
+  color: rgba(18, 20, 29, 0.7);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+
+  max-width: 600px;
+  margin-top: 30px;
+}
+
+.community__button_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 50px;
+}
+
+.button_community {
+  padding: 18px 22px;
+}
+
+.community__circles {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.community__cirlce_small {
+  position: absolute;
+
+  width: 830px;
+  height: 830px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  border: 2px solid rgb(210, 210, 210);
+  border-radius: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.planet {
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+
+  img {
+    object-fit: cover;
+  }
+
+  transform: translateX(415px);
+}
+
+.community__cirlce_large {
+  position: absolute;
+
+  width: 1000px;
+  height: 1000px;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  border: 2px solid rgb(210, 210, 210);
+  border-radius: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .planet {
+    transform: translateX(500px);
+  }
+}
+
+.planet_large {
+  img {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+.planet_small {
+  img {
+    width: 51px;
+    height: 51px;
+  }
+}
+
+.planet_orange {
+  animation: modeSmallCircle 10s linear infinite;
+}
+
+.planet_purple {
+  animation: modeSmallCircle 13s linear infinite;
+}
+
+.planet_pink {
+  animation: modeSmallCircle 16s linear infinite;
+}
+
+.planet_white {
+  animation: modeSmallCircle 19s linear infinite;
+}
+
+.planet_cyan {
+  animation: modeLargeCircle 12s linear infinite;
+}
+
+.planet_red {
+  animation: modeLargeCircle 15s linear infinite;
+}
+
+.planet_sky {
+  animation: modeLargeCircle 18s linear infinite;
+}
+
+.planet_rubby {
+  animation: modeLargeCircle 21s linear infinite;
+}
+
+.planet_scarlet {
+  animation: modeLargeCircle 23s linear infinite;
+}
+
+@keyframes modeSmallCircle {
+  0% {
+    transform: rotate(0deg) translateX(415px) rotate(0deg); /* Начальное положение и смещение */
+  }
+  100% {
+    transform: rotate(360deg) translateX(415px) rotate(-360deg); /* Конечное положение и смещение по кругу */
+  }
+}
+
+@keyframes modeLargeCircle {
+  0% {
+    transform: rotate(0deg) translateX(500px) rotate(0deg); /* Начальное положение и смещение */
+  }
+  100% {
+    transform: rotate(360deg) translateX(500px) rotate(-360deg); /* Конечное положение и смещение по кругу */
+  }
+}
