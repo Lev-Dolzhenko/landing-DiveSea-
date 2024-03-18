@@ -71,6 +71,13 @@ a {
     text-align: center;
   }
 
+  &_benefits {
+    line-height: 100%;
+    span {
+      color: rgb(20, 20, 22);
+    }
+  }
+
   &_questions {
     text-align: center;
     line-height: 140%;
