@@ -1,23 +1,22 @@
-const prevBtn = document.getElementById("prevBtnHero");
-const nextBtn = document.getElementById("nextBtnHero");
-const slides = document.querySelector(".hero__slides");
-const totalSlides = document.querySelectorAll(".hero__slide").length;
-const totalSlidesArr = document.querySelectorAll(".hero__slide");
-console.log(totalSlidesArr);
-let slideIndex = 0;
+import Swiper from "swiper";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
-nextBtn.addEventListener("click", () => {
-  slideIndex = (slideIndex + 1) % totalSlides;
-  if (slideIndex === totalSlides - 1) return;
-  updateSlidePosition();
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+const swiper = new Swiper(".hero__swiper", {
+  modules: [Navigation, Pagination, Autoplay],
+  navigation: {
+    nextEl: "#nextBtnHero",
+    prevEl: "#prevBtnHero",
+  },
+  slidesPerView: 1,
+  loop: true,
+  spaceBetween: 40,
+  breakpoints: {
+    800: {
+      slidesPerView: 2,
+    },
+  },
 });
-
-prevBtn.addEventListener("click", () => {
-  slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
-  if (slideIndex === totalSlides - 1) return;
-  updateSlidePosition();
-});
-
-function updateSlidePosition() {
-  slides.style.transform = `translateX(${-slideIndex * 340}px)`;
-}

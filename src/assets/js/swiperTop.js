@@ -15,6 +15,20 @@ const swiper = new Swiper(".top_swiper", {
     delay: 2000,
     disableOnInteraction: false,
   },
-  slidesPerView: 5,
+  slidesPerView: 1,
   loop: true,
+  breakpoints: {
+    680: {
+      slidesPerView: 2,
+    },
+    1000: {
+      slidesPerView: 3,
+    },
+    1300: {
+      slidesPerView: 4,
+    },
+    1500: {
+      slidesPerView: 5,
+    },
+  },
 });

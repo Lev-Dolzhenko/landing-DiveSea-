@@ -13,22 +13,23 @@
 .explore__text {
 }
 .explore__title {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .explore__span {
   color: rgba(213, 213, 213, 0.6);
-  font-size: 20px;
+  font-size: clamp(16px, 0.909rem + 0.45vw, 20px);
   font-weight: 500;
   line-height: 130%;
   letter-spacing: 1%;
   text-align: left;
 
-  margin-bottom: 50px;
+  margin-bottom: clamp(30px, 1.42rem + 2.27vw, 50px);
 }
 .explore__buttons {
   button {
-    padding: 20px 25px;
+    padding: clamp(10px, 0.398rem + 1.14vw, 20px)
+      clamp(3px, -0.313rem + 2.5vw, 25px);
     border: 1.5px solid rgb(255, 255, 255);
     border-radius: 12px;
 
@@ -50,9 +51,36 @@
 }
 .explore__image {
   border-radius: 15px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
 
   img {
     border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .explore__wrapper {
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+    padding: 10px;
+
+    text-align: center;
+  }
+
+  .explore__image {
+    img {
+      margin-bottom: -90px;
+    }
+  }
+
+  .explore__title {
+    h3 {
+      text-align: center;
+    }
+  }
+
+  .explore__span {
+    text-align: center;
   }
 }

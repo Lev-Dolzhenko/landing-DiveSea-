@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <header class="header none">
+    <header class="header 1none">
       <div class="container">
         <div class="header__wrapper">
           <nav class="header__nav">
@@ -39,118 +39,109 @@
             </div>
           </div>
         </div>
+        <div class="header__wrapper_mobile">
+          <div class="header__list_item">
+            <a href="#!"
+              ><img src="/images/header/logotype.svg" alt="DiveSea"
+            /></a>
+          </div>
+          <div id="burgerIcon">
+            <input
+              type="checkbox"
+              id="burger-checkbox"
+              class="burger-checkbox"
+            />
+            <label
+              id="burgerButton"
+              class="burger"
+              for="burger-checkbox"
+            ></label>
+          </div>
+        </div>
+        <div class="overlay"></div>
+        <nav class="header__nav_mobile none">
+          <ul class="header__nav_list">
+            <li class="header__nav_item"><a href="#!">Discover</a></li>
+            <li class="header__nav_item"><a href="#!">creators</a></li>
+            <li class="header__nav_item"><a href="#!">Sell</a></li>
+            <li class="header__nav_item"><a href="#!">stats</a></li>
+            <li class="header__nav_item">
+              <button class="button button__header_mobile">
+                Connect Wallet
+              </button>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
-    <main class="main">
-      <section class="hero none">
+    <main class="main 1none">
+      <section class="hero 1none">
         <div class="container">
           <div class="hero__row">
             <div class="hero__text">
               <div class="hero__title">
-                <h1 class="title1 title1_hero">Discover And Create NFTs</h1>
+                <h2 class="title2 title2_hero title2_accent">
+                  Discover And Create NFTs
+                </h2>
               </div>
               <div class="hero__subtitle">
-                <p class="subtitle subtitle_hero">
+                <p>
                   Discover, Create and Sell NFTs On Our NFT Marketplace With
                   Over Thousands Of NFTs And Get a <span>$20 bonus.</span>
                 </p>
               </div>
               <div class="hero__buttons">
                 <button class="button button_hero">Explore More</button>
-                <button class="button button_hero button_hero_transparent">
-                  create NFT
-                </button>
+                <button class="button button_hero">create NFT</button>
               </div>
-              <div class="hero__statistic">
-                <div class="hero__statistic_item">
+              <div class="hero__info">
+                <div class="hero__info_item">
                   <strong>430K+</strong>
                   <span>Art Works</span>
                 </div>
-                <div class="hero__statistic_item">
-                  <strong>87K+</strong>
-                  <span>Collections</span>
-                </div>
-                <div class="hero__statistic_item">
+                <div class="hero__info_item">
                   <strong>159K+</strong>
                   <span>Creators</span>
                 </div>
-              </div>
-            </div>
-            <div class="swiper__wrapper">
-              <div class="hero__swiper">
-                <div class="hero__slider">
-                  <div class="hero__slides">
-                    <div class="hero__slide">
-                      <img src="/images/main/hero/swiperImageOne.jpeg" alt="" />
-                    </div>
-                    <div class="hero__slide">
-                      <img src="/images/main/hero/swiperImageTwo.jpeg" alt="" />
-                    </div>
-                    <div class="hero__slide">
-                      <img
-                        src="/images/main/hero/swiperImageThree.jpeg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="hero__slide">
-                      <img
-                        src="/images/main/hero/swiperImageThree.jpeg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="hero__slide">
-                      <img src="/images/main/hero/swiperImageOne.jpeg" alt="" />
-                    </div>
-                  </div>
-                  <div class="slides__buttons slides__buttons_hero">
-                    <button class="slides__button" id="prevBtnHero">
-                      <img src="/images/main/hero/sliderPrev.svg" alt="" />
-                    </button>
-                    <button class="slides__button" id="nextBtnHero">
-                      <img src="/images/main/hero/sliderNext.svg" alt="" />
-                    </button>
-                  </div>
-                  <svg
-                    class="hero__vector"
-                    version="1.0"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="512.000000pt"
-                    height="512.000000pt"
-                    viewBox="0 0 512.000000 512.000000"
-                    preserveAspectRatio="xMidYMid meet"
-                  >
-                    <g
-                      transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                      fill="#000000"
-                      stroke="none"
-                    >
-                      <path
-                        d="M4354 4960 c-18 -4 -47 -16 -65 -28 -61 -38 -607 -594 -624 -635 -39
--93 50 -194 147 -166 21 5 74 49 143 116 60 60 154 151 209 203 l98 95 -6
--152 c-41 -1037 -428 -1786 -1099 -2129 -111 -57 -236 -108 -244 -100 -3 2 7
-55 21 118 50 224 61 328 61 573 0 252 -8 320 -57 475 -55 172 -115 268 -258
-411 -197 198 -416 303 -661 316 -482 26 -926 -297 -1076 -784 -25 -82 -27
--101 -27 -263 0 -161 3 -182 27 -263 61 -197 149 -342 306 -498 156 -157 331
--262 559 -338 180 -60 437 -97 623 -89 49 1 89 1 89 0 0 -13 -143 -286 -195
--372 -203 -337 -479 -617 -780 -795 -394 -232 -853 -300 -1347 -200 -74 15
--79 15 -121 -3 -99 -44 -101 -174 -4 -221 134 -63 596 -94 852 -56 445 65 841
-265 1179 594 283 277 510 618 670 1007 l38 91 79 21 c479 129 906 453 1182
-900 232 374 370 822 422 1368 8 87 15 201 15 255 0 53 3 105 6 114 5 13 52
--29 209 -185 220 -220 235 -230 311 -204 66 22 97 89 75 156 -16 49 -624 654
--666 663 -53 11 -59 11 -91 5z m-2219 -1176 c141 -36 279 -125 404 -261 119
--128 175 -267 202 -494 26 -227 -18 -601 -102 -875 l-19 -62 -77 -8 c-117 -10
--375 2 -484 25 -378 77 -663 271 -808 551 -66 127 -86 207 -86 345 0 141 16
-211 75 331 120 245 359 422 625 465 65 10 195 2 270 -17z"
-                      />
-                    </g>
-                  </svg>
+                <div class="hero__info_item">
+                  <strong>87K+</strong>
+                  <span>Collections</span>
                 </div>
               </div>
-              <img
-                class="hero__dodes"
-                src="/images/main/hero/dodes.png"
-                alt="dodes"
-              />
+            </div>
+            <div class="hero__slider">
+              <div class="hero__swiper swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper-slide_hero">
+                    <img
+                      src="/images/main/hero/swiperImageOne.jpeg"
+                      alt="swiperImageOne"
+                    />
+                  </div>
+                  <div class="swiper-slide swiper-slide_hero">
+                    <img
+                      src="/images/main/hero/swiperImageOne.jpeg"
+                      alt="swiperImageOne"
+                    />
+                  </div>
+                  <div class="swiper-slide swiper-slide_hero">
+                    <img
+                      src="/images/main/hero/swiperImageOne.jpeg"
+                      alt="swiperImageOne"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="slides__button_wrapper slides__button_wrapper-hero">
+                <div class="slides__buttons slides__buttons_top">
+                  <button class="slides__button" id="prevBtnHero">
+                    <img src="/images/main/hero/sliderPrev.svg" alt="" />
+                  </button>
+                  <button class="slides__button" id="nextBtnHero">
+                    <img src="/images/main/hero/sliderNext.svg" alt="" />
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -404,7 +395,7 @@
             </button>
           </div>
         </div>
-        <div class="viewed">
+        <div class="viewed viewed_top_wrapper">
           <div class="viewed_top">
             <span> Recent Viewed </span>
             <img src="/images/main/top/dots.svg" alt="dots" />
@@ -471,7 +462,7 @@
           </div>
         </div>
       </section>
-      <section class="marketplace 1none">
+      <section class="marketplace none">
         <div class="container">
           <div class="marketplace__title">
             <h2 class="title2 title2_marketplace title2_accent">
@@ -479,7 +470,7 @@
             </h2>
           </div>
           <ul class="marketplace__tags">
-            <li class="marketplace__tag">
+            <li class="marketplace__tag marketplace__tag_all">
               <span>All</span>
             </li>
             <li class="marketplace__tag">
@@ -740,7 +731,7 @@
           </div>
         </div>
       </section>
-      <section class="benefits">
+      <section class="benefits none">
         <div class="container">
           <div class="benefits__row">
             <div class="benefits__left">
@@ -1083,6 +1074,26 @@
                 </div>
               </div>
             </div>
+            <div class="community__text community__text_mobile">
+              <div class="community__title">
+                <h2 class="title2 title2_community title2_accent">
+                  Join The <br />
+                  <span>Community</span>
+                </h2>
+              </div>
+              <div class="community__subtitle">
+                <p>
+                  Our vibrant community is full of collectors, artists, and
+                  enthusiasts who share a passion for one-of-a-kind digital.
+                </p>
+              </div>
+
+              <div class="community__button_wrapper">
+                <button class="button button_community">
+                  Join Our Community
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1316,7 +1327,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer none">
+    <footer class="footer 1none">
       <div class="container">
         <div class="footer__wrapper">
           <div class="footer__wrapper_top">

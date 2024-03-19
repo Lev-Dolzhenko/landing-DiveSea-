@@ -53,7 +53,7 @@ a {
 
 .title2 {
   color: rgb(197, 197, 197);
-  font-size: 45px;
+  font-size: clamp(30px, 1.534rem + 1.7vw, 45px);
   font-weight: 600;
   line-height: 26px;
   letter-spacing: 0px;
@@ -107,16 +107,17 @@ a {
 
   &_question {
     color: rgb(50, 49, 66);
-    font-size: 25px;
+    font-size: clamp(12px, 0.455rem + 1.48vw, 25px);
     font-weight: 600;
-    line-height: 64px;
+    line-height: clamp(20px, 0.25rem + 5vw, 64px);
     letter-spacing: 0%;
     text-align: left;
   }
 
   &_explore {
     color: rgb(255, 255, 255);
-    font-size: 45px;
+    font-size: clamp(30px, 1.534rem + 1.7vw, 45px);
+
     font-weight: 600;
     line-height: 130%;
     letter-spacing: 1%;

@@ -187,3 +187,9 @@
   align-items: center;
   justify-content: space-between;
 }
+
+@include mediaTablet {
+  .viewed_top_wrapper {
+    display: none;
+  }
+}

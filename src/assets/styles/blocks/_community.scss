@@ -1,5 +1,5 @@
 .community {
-  height: 1400px;
+  height: clamp(700px, 27.841rem + 79.55vw, 1400px);
 
   position: relative;
 }
@@ -10,13 +10,13 @@
 
 .community__subtitle {
   color: rgba(18, 20, 29, 0.7);
-  font-size: 18px;
+  font-size: clamp(12px, 0.614rem + 0.68vw, 18px);
   font-weight: 400;
-  line-height: 32px;
+  line-height: clamp(20px, 0.977rem + 1.36vw, 32px);
   text-align: center;
 
   max-width: 600px;
-  margin-top: 30px;
+  margin-top: clamp(20px, 1.023rem + 1.14vw, 30px);
 }
 
 .community__button_wrapper {
@@ -24,7 +24,7 @@
   align-items: center;
   justify-content: center;
 
-  margin-top: 50px;
+  margin-top: clamp(30px, 1.42rem + 2.27vw, 50px);
 }
 
 .button_community {
@@ -81,6 +81,10 @@
   }
 
   transform: translateX(415px);
+}
+
+.community__text_mobile {
+  display: none;
 }
 
 .community__cirlce_large {
@@ -170,5 +174,19 @@
   }
   100% {
     transform: rotate(360deg) translateX(500px) rotate(-360deg); /* Конечное положение и смещение по кругу */
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .community__cirlce_large {
+    display: none;
+  }
+
+  .community__cirlce_small {
+    display: none;
+  }
+
+  .community__text_mobile {
+    display: block;
   }
 }
