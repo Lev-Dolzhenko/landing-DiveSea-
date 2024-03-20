@@ -1,5 +1,5 @@
 .questions__list {
-  margin-top: 80px;
+  margin-top: clamp(50px, 2.443rem + 3.41vw, 80px);
 }
 
 .questions__item {

@@ -1,5 +1,5 @@
 .explore {
-  padding: 220px 0 150px;
+  padding: clamp(100px, 3.523rem + 13.64vw, 220px) 0 150px;
 }
 
 .explore__wrapper {
